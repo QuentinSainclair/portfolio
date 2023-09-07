@@ -1,0 +1,18 @@
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome path {
+    stroke-dasharray: 400px;
+    stroke-dashoffset: 400px;
+    animation: anim 6s ease forwards;
+}
+
+@keyframes anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
