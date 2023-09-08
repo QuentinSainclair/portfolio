@@ -10,7 +10,7 @@ export class WelcomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     setTimeout(() => {
-      this.fillColor = 'black';
-    }, 2100);
+      this.fillColor = 'white';
+    }, 1200);
   }
 }

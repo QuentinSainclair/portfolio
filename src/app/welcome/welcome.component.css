@@ -8,7 +8,7 @@
 .welcome path {
     stroke-dasharray: 400px;
     stroke-dashoffset: 400px;
-    animation: anim 6s ease forwards;
+    animation: anim 5s ease forwards;
 }
 
 @keyframes anim {
