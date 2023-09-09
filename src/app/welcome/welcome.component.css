@@ -1,7 +1,7 @@
 .welcome {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 65%;
     transform: translate(-50%, -50%);
 }
 
@@ -15,4 +15,12 @@
     to {
         stroke-dashoffset: 0;
     }
+}
+
+svg {
+    height: 10rem;
+}
+
+.removeSVG {
+    display: none;
 }
