@@ -10,6 +10,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ParcoursComponent } from './parcours/parcours.component';
 import { HeaderComponent } from './header/header.component';
 import { ImageComponent } from './image/image.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ImageComponent } from './image/image.component';
     ParcoursComponent,
     HeaderComponent,
     ImageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

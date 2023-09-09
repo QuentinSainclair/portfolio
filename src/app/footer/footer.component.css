@@ -1,0 +1,19 @@
+
+.fa-linkedin, .fa-github {
+    color: var(--border-color);
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+footer {
+    position: absolute;
+    left: 45%;
+    top: 80%;
+}
+
+@media (max-width: 952px) {
+    footer {
+        top: 120%;
+        left: 35%;
+    }
+}
