@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
+  ngAfterViewInit() {
+    let li = document.querySelectorAll('li');
 
+    const TL1 = gsap.timeline({paused: true});
+
+    TL1
+      .from(li, { y: -50, opacity: 0, duration: 0.5, stagger: 0.1 })
+
+    TL1.play();
+  }
 }
