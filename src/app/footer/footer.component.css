@@ -1,11 +1,24 @@
-.fa-linkedin, .fa-github {
+.fa-brands {
     color: var(--border-color);
     cursor: pointer;
     margin-right: 25px;
 }
 
+.fa-brands:hover {
+    animation: transform 0.2s ease-in-out forwards;
+}
+
+@keyframes transform {
+    from {
+      scale: 1;
+    }
+    to {
+      scale: 1.2;
+    }
+}
+
 footer {
     display: flex;
     justify-content: center;
-    margin: 3em;
+    margin: 5em;
 }
