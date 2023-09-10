@@ -2,8 +2,9 @@
     border: 2px solid var(--border-color);
     border-radius: 10%;
     width: 400px;
+    height: 300px;
     background-color: #1a1f27;
-    margin-right: 150px;
+    margin: 10em 0 0 0;
 }
 
 .fa-envelope, .fa-phone {
@@ -53,17 +54,16 @@ h2, h3, p {
     width: 150px;
     background-color: var(--border-color);
     height: 1px; 
-    position: absolute;
-    top: 50%;
-    left: 403px;
+    margin-top: 19em;
+}
+
+#photo {
+    margin-top: 10em;
 }
 
 #presentationHome {
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
     /* opacity: 0;
     animation: fadeIn 0.5s ease 2200ms 1 normal forwards; */
 }
@@ -84,26 +84,39 @@ h2, h3, p {
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        top: 70%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 10%;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     #textHome { 
         grid-area: 1 / 1 / 2 / 2; 
         margin-right: 0;
+        width: 250px
     }
     #barre {
         height: 150px;
         width: 1px;
         grid-area: 2 / 1 / 3 / 2;
         top: 0;
-        left: 200px;
+        left: 120px;
     }
     #photo {
         position: absolute;
         top: 50%;
-        left: 18%;
+        left: 1%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 12px;
     }
 }
 
