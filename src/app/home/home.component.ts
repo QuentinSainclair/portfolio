@@ -7,6 +7,10 @@ import { gsap } from 'gsap';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements AfterViewInit {
+  urlImg: string;
+  constructor() {
+    this.urlImg = 'assets/Images/wave.svg'
+  }
 
   ngAfterViewInit() {
     let text = document.getElementById('textHome');

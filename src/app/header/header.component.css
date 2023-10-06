@@ -4,6 +4,8 @@
 
 header {
     display: flex;
+    z-index: 1;
+    position: relative;
 }
 
 nav {
@@ -89,21 +91,20 @@ nav ul li a:hover {
     }
 }
 
-#hr1 {
-    height: 1px;
-    background-color: var(--border-color);
-    border: 0;
-}
-
 .logo {
-    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-left: 20px;
+    margin-left: 40px;
+    z-index: 1;
+    position: relative;
 }
 
 a[href^="/"] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+img {
+    height: 50px;
 }

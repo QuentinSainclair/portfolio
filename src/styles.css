@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: #161719
 }
 ol, ul {
 	list-style: none;
@@ -44,7 +43,8 @@ table {
 }
 
 :root {
-	--background-color: #161719;
-	--border-color: #b4a88f;
-	--text-color: #FFFFFF;
+	--background-color: #FFFFFF;
+	--border-color: #9B6A0B;
+	--text-color: #000000;
+	--wave-color: #82C46C;
 }

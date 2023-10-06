@@ -7,6 +7,10 @@ import { gsap } from 'gsap';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements AfterViewInit {
+  urlImgLogo: string;
+  constructor() {
+    this.urlImgLogo = '/assets/Images/logoCouleur.png'
+  }
   ngAfterViewInit() {
     let li = document.querySelectorAll('li');
 
