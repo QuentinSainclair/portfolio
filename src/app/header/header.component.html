@@ -1,9 +1,10 @@
 <header>
-    <div class="logo">
-        <a routerLink="/"><img [src]="urlImgLogo" alt="Logo"></a>
-    </div>
     <nav>
-        <input type="checkbox" id="check">
+        <div class="logo">
+            <a routerLink="/"><img [src]="urlImgLogo" alt="Logo"></a>
+        </div>
+        <div>
+            <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -13,5 +14,6 @@
             <li id="li3"><a routerLink="/projects">Réalisations</a></li>
             <li id="li4"><a routerLink="/parcours">Parcours</a></li>
         </ul>
+        </div>
     </nav>
 </header>

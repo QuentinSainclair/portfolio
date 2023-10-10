@@ -14,13 +14,12 @@ nav {
     background: var(--background-color);
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
 }
 
 nav ul {
     margin-right: 20px;
     display: flex;
-    position: absolute;
 }
 
 nav ul li a {
