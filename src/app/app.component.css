@@ -11,3 +11,9 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+
+app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
