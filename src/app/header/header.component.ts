@@ -8,17 +8,42 @@ import { gsap } from 'gsap';
 })
 export class HeaderComponent implements AfterViewInit {
   urlImgLogo: string;
+  burgerMenuOpen: boolean = false;
+
   constructor() {
-    this.urlImgLogo = '/assets/Images/logoCouleur.png'
+    this.urlImgLogo = '/assets/Images/logoCouleur.png';
   }
+
   ngAfterViewInit() {
-    let li = document.querySelectorAll('li');
+    let liElements = document.querySelectorAll('li');
+    let ulElements = document.querySelectorAll('ul');
 
-    const TL1 = gsap.timeline({paused: true});
-
-    TL1
-      .from(li, { y: -50, opacity: 0, duration: 0.5, stagger: 0.1 })
-
+    const TL1 = gsap.timeline({ paused: true });
+    TL1.from(liElements, { y: -50, opacity: 0, duration: 0.5, stagger: 0.1 });
     TL1.play();
+
+    let burgerMenu = document.getElementById('check');
+
+    if (burgerMenu) {
+      burgerMenu.addEventListener('click', () => {
+        this.burgerMenuOpen = !this.burgerMenuOpen;
+      });
+    }
+
+    liElements.forEach((li) => {
+      li.addEventListener('click', () => {
+        ulElements.forEach((ulElement) => {
+          ulElement.addEventListener('click', () => {
+            if (window.innerWidth < 1070) {
+              // Décochez la case à cocher pour fermer le menu burger
+              let checkElement = document.getElementById('check') as HTMLInputElement;
+              if (checkElement) {
+                checkElement.checked = false;
+              }
+            }
+          });
+        });
+      });
+    });
   }
 }
