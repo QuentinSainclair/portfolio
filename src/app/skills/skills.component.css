@@ -7,3 +7,27 @@
 .skillsPage {
     background-color: var(--wave-color);
 }
+
+.presentationSkills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-right: 8rem;
+}
+
+.imgMultitache {
+    height: 18rem;
+    margin: 5rem 0 5rem 8rem;
+}
+
+.textePresentationSkills {
+    color: var(--background-color);
+}
+
