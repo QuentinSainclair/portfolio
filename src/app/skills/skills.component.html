@@ -1,8 +1,11 @@
 <div class="skillsPage">
+    <div class="image-container">
+        <img [src]="imgTitle" alt="Skills" id="imgTitle">
+    </div>    
     <div class="presentationSkills">
         <div class="content">
-            <img [src]="imgMultitache" alt="Multitache" class="imgMultitache">
-            <div class="textePresentationSkills">
+            <img [src]="imgMultitache" alt="Multitache" id="imgMultitache">
+            <div id="textePresentationSkills">
                 <p>
                     bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
                     bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
@@ -14,7 +17,13 @@
         </div>
     </div>    
     <div class="skills">
-        <img [src]="imgFrontDesktop" alt="Front" class="imagesSkills">
-        <img [src]="imgBackDesktop" alt="Back" class="imagesSkills">
+        <img [src]="imgFrontDesktop" alt="Front" class="imagesSkills" id="imgSkillsFrontDesktop">
+        <div data-aos="fade-up">
+            <img [src]="imgBackDesktop" alt="Back" class="imagesSkills">
+        </div>
+        <img [src]="imgToolsDesktop" alt="Tools" class="imagesSkills">
     </div>
+</div>
+<div>
+    <app-footer></app-footer>
 </div>

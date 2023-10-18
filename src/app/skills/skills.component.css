@@ -1,11 +1,21 @@
 .skills {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
+    display: grid;
+    justify-content: center;
 }
 
 .skillsPage {
     background-color: var(--wave-color);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.imagesSkills {
+    width: 1000px;
 }
 
 .presentationSkills {
@@ -22,12 +32,14 @@
     margin-right: 8rem;
 }
 
-.imgMultitache {
-    height: 18rem;
+#imgMultitache {
+    height: 20rem;
     margin: 5rem 0 5rem 8rem;
 }
 
-.textePresentationSkills {
+#textePresentationSkills {
     color: var(--background-color);
+    width: 30rem;
+    font-size: 20px;
 }
 
