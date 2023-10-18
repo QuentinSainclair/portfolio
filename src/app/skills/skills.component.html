@@ -17,13 +17,18 @@
         </div>
     </div>    
     <div class="skills">
-        <img [src]="imgFrontDesktop" alt="Front" class="imagesSkills" id="imgSkillsFrontDesktop">
-        <div data-aos="fade-up">
+        <div>
+            <img [src]="imgFrontDesktop" alt="Front" class="imagesSkills" id="imgSkillsFrontDesktop">
+        </div>
+        <div data-aos="fade-right" data-aos-offset="500"
+        data-aos-easing="ease-in-sine">
             <img [src]="imgBackDesktop" alt="Back" class="imagesSkills">
         </div>
-        <img [src]="imgToolsDesktop" alt="Tools" class="imagesSkills">
+        <div data-aos="fade-left" data-aos-offset="500"
+        data-aos-easing="ease-in-sine">
+            <img [src]="imgToolsDesktop" alt="Tools" class="imagesSkills">
+        </div>
     </div>
 </div>
-<div>
-    <app-footer></app-footer>
-</div>
+
+

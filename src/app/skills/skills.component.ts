@@ -1,5 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { gsap } from 'gsap';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-skills',
@@ -19,6 +21,11 @@ export class SkillsComponent {
     this.imgTitle = 'assets/Images/Skills.png';
     this.imgToolsDesktop = 'assets/Images/tools_desktop.png';
   }
+
+  ngOnInit() {
+    AOS.init();
+  }
+  
   ngAfterViewInit() {
     let image = document.getElementById('imgMultitache');
     let texte = document.getElementById('textePresentationSkills');
